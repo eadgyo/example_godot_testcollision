@@ -1,0 +1,51 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "AABOX",
+"language": "GDScript",
+"path": "res://AABOX.gd"
+}, {
+"base": "Object",
+"class": "Hit",
+"language": "GDScript",
+"path": "res://hit.gd"
+}, {
+"base": "Object",
+"class": "Sweep",
+"language": "GDScript",
+"path": "res://sweep.gd"
+}, {
+"base": "Node2D",
+"class": "test",
+"language": "GDScript",
+"path": "res://test.gd"
+} ]
+_global_script_class_icons={
+"AABOX": "",
+"Hit": "",
+"Sweep": "",
+"test": ""
+}
+
+[application]
+
+config/name="Test Collision"
+run/main_scene="res://Node2D.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
